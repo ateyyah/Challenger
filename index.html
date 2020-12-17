@@ -11,6 +11,20 @@
 
 <body>
     <section class="section-image">
+        <div class="theme-color f-row-se f-cen bg-w r-15">
+            <div class="picker f-row cp-primary">
+                <p>primary color:</p>
+                <div class="radius">
+                    <input type="color" id="primary-picker" onchange="OnPrimaryColorChanged()">
+                </div>
+            </div>
+            <div class="picker f-row cp-secondary" onchange="OnSecondaryColorChanged()">
+                <p>secondary color:</p>
+                <div class="radius">
+                    <input type="color" id="secondary-picker">
+                </div>
+            </div>
+        </div>
         <div class="side-image">
             <div class="title">
                 <h1 class="c-w">challenger</h1>
@@ -23,6 +37,7 @@
             <p class="fz-20">A PSEU PROJECT</p>
         </div>
     </section>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
