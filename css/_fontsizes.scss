@@ -1,3 +1,43 @@
+// SIZES
+$h1 :4.5rem;
+$h2 :4rem;
+$h3 :3.5rem;
+$h4 :3rem;
+$h5 :2.5rem;
+$h6 :2rem;
+
+// HEADERS
+h1 {
+    font-size: $h1;
+    columns: $primaryColor;
+}
+
+h2 {
+    font-size: $h2;
+    columns: $primaryColor;
+}
+
+h3 {
+    font-size: $h3;
+    columns: $primaryColor;
+}
+
+h4 {
+    font-size: $h4;
+    columns: $primaryColor;
+}
+
+h5 {
+    font-size: $h5;
+    columns: $primaryColor;
+}
+
+h6 {
+    font-size: $h6;
+    columns: $primaryColor;
+}
+
+// numeric sizes
 .fz-1 {
     font-size: 1px !important;
 }

@@ -78,6 +78,42 @@
   background-color: black;
 }
 
+h1 {
+  font-size: 4.5rem;
+  -webkit-columns: #9A24A9;
+          columns: #9A24A9;
+}
+
+h2 {
+  font-size: 4rem;
+  -webkit-columns: #9A24A9;
+          columns: #9A24A9;
+}
+
+h3 {
+  font-size: 3.5rem;
+  -webkit-columns: #9A24A9;
+          columns: #9A24A9;
+}
+
+h4 {
+  font-size: 3rem;
+  -webkit-columns: #9A24A9;
+          columns: #9A24A9;
+}
+
+h5 {
+  font-size: 2.5rem;
+  -webkit-columns: #9A24A9;
+          columns: #9A24A9;
+}
+
+h6 {
+  font-size: 2rem;
+  -webkit-columns: #9A24A9;
+          columns: #9A24A9;
+}
+
 .fz-1 {
   font-size: 1px !important;
 }
@@ -573,40 +609,12 @@ btn-pri {
   margin: auto;
 }
 
-h1 {
-  font-size: 4.5rem;
-  -webkit-columns: #9A24A9;
-          columns: #9A24A9;
+.ml-a {
+  margin-left: auto;
 }
 
-h2 {
-  font-size: 4rem;
-  -webkit-columns: #9A24A9;
-          columns: #9A24A9;
-}
-
-h3 {
-  font-size: 3.5rem;
-  -webkit-columns: #9A24A9;
-          columns: #9A24A9;
-}
-
-h4 {
-  font-size: 3rem;
-  -webkit-columns: #9A24A9;
-          columns: #9A24A9;
-}
-
-h5 {
-  font-size: 2.5rem;
-  -webkit-columns: #9A24A9;
-          columns: #9A24A9;
-}
-
-h6 {
-  font-size: 2rem;
-  -webkit-columns: #9A24A9;
-          columns: #9A24A9;
+.mr-a {
+  margin-right: auto;
 }
 
 * {
@@ -624,11 +632,15 @@ body {
 
 a {
   text-decoration: none;
-  color: black;
 }
 
 a:hover {
   color: #E958A2;
+}
+
+h1,
+h2 {
+  font-weight: normal;
 }
 
 .container {
@@ -640,34 +652,47 @@ p {
   font-size: 12px;
 }
 
-.section-top {
+.section-image {
   background: #f761a1;
   background: linear-gradient(135deg, #E958A2 0%, #9A24A9 100%);
   padding-top: 150px;
   padding-left: 100px;
+  height: 100vh;
 }
 
-.section-top h1 {
+.section-image h1 {
   font-family: "Sitka Display";
-  font-weight: normal;
 }
 
-.section-top h2 {
-  font-weight: normal;
+.section-image .side-image {
+  height: 100%;
+  background-image: url("../img/top.svg");
+  background-size: 40%;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section-image .side-image .buttons {
   margin-bottom: 100px;
 }
 
-.section-top img {
-  width: 600px;
-}
-
-.section-top button {
-  margin-bottom: 20px;
-}
-
-.section-top p {
-  margin-top: auto;
+.section-image .side-image p {
+  color: #650061;
   margin-bottom: 30px;
+}
+
+.section-image button {
+  margin: 10px 0px;
 }
 
 .btn-pri {
@@ -681,105 +706,5 @@ p {
   border: none;
   border-radius: 25px;
   background-color: #9A24A9;
-}
-
-.section-quizes {
-  padding-top: 15%;
-  padding-bottom: 10%;
-  padding-right: 20%;
-  padding-left: 20%;
-}
-
-.section-quizes .tags {
-  word-spacing: 30px;
-}
-
-.section-quizes .tag {
-  padding: 8px;
-  border: none;
-  background-color: transparent;
-}
-
-.section-quizes .btn-lrg {
-  margin-top: 30px;
-  width: 100%;
-  padding-top: 7%;
-  padding-bottom: 7%;
-}
-
-.section-quizes .active {
-  border-radius: 20px;
-  padding: 8px;
-  background-image: -webkit-gradient(linear, left top, right top, from(#E958A2), to(#9A24A9));
-  background-image: linear-gradient(to right, #E958A2 0%, #9A24A9 100%);
-  color: white;
-}
-
-.section-quizes .or {
-  padding-top: 50px;
-  padding-bottom: 20px;
-}
-
-.section-typing {
-  padding-top: 8%;
-  padding-bottom: 12.5%;
-  padding-left: 10%;
-}
-
-.section-typing h1 {
-  font-family: "Sitka Display";
-  color: #2E353A;
-  padding-right: 30%;
-}
-
-.section-typing .btn-lrg {
-  width: 85%;
-  padding-top: 4%;
-  padding-bottom: 4%;
-}
-
-.section-typing p {
-  color: #2E353A;
-  font-size: 25px;
-  padding-right: 30%;
-  padding-top: 3%;
-  padding-bottom: 10%;
-}
-
-.section-typing .right-side {
-  position: relative;
-}
-
-.section-typing .right-side img {
-  position: absolute;
-  height: 150%;
-  top: -5%;
-  left: -250px;
-}
-
-.separator {
-  height: 10px;
-  width: 100%;
-  background-color: #2E353A;
-}
-
-.section-footer {
-  text-align: center;
-  color: #2E353A;
-}
-
-.section-footer .inner {
-  padding-top: 5%;
-  padding-bottom: 5%;
-}
-
-.section-footer p {
-  font-size: 20px;
-}
-
-.section-footer h6 {
-  font-family: "Sitka Display";
-  font-weight: normal;
-  font-size: 50px;
 }
 /*# sourceMappingURL=style.css.map */

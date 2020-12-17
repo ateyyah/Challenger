@@ -4,50 +4,6 @@
 @import 'modifications';
 @import 'measurements';
 
-// STARTING SETUP \\
-
-
-// SIZES
-$h1 :4.5rem;
-$h2 :4rem;
-$h3 :3.5rem;
-$h4 :3rem;
-$h5 :2.5rem;
-$h6 :2rem;
-
-// HEADERS
-h1 {
-    font-size: $h1;
-    columns: $primaryColor;
-}
-
-h2 {
-    font-size: $h2;
-    columns: $primaryColor;
-}
-
-h3 {
-    font-size: $h3;
-    columns: $primaryColor;
-}
-
-h4 {
-    font-size: $h4;
-    columns: $primaryColor;
-}
-
-h5 {
-    font-size: $h5;
-    columns: $primaryColor;
-}
-
-h6 {
-    font-size: $h6;
-    columns: $primaryColor;
-}
-
-// END HEADERS
-
 * {
     margin: 0px;
     padding: 0px;
@@ -63,11 +19,15 @@ body {
 
 a {
     text-decoration: none;
-    color: black;
 
     &:hover {
         color: $secondaryColor;
     }
+}
+
+h1,
+h2 {
+    font-weight: normal;
 }
 
 .container {
@@ -80,34 +40,42 @@ p {
     // color: $primaryColor;
 }
 
-.section-top {
+.section-image {
     background: rgb(247, 97, 161);
     background: linear-gradient(135deg, $secondaryColor 0%, $primaryColor 100%);
     padding-top: 150px;
     padding-left: 100px;
+    height: 100vh;
 
     h1 {
         font-family: "Sitka Display";
-        font-weight: normal;
     }
 
-    h2 {
-        font-weight: normal;
-        margin-bottom: 100px;
-    }
+    .side-image {
+        height: 100%;
+        background-image: url("../img/top.svg");
+        background-size: 40%;
+        background-position: bottom right;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 
-    img {
-        width: 600px;
+        .buttons {
+            margin-bottom: 100px;
+        }
+
+        p {
+            color: $primary300;
+            margin-bottom: 30px;
+        }
     }
 
     button {
-        margin-bottom: 20px;
+        margin: 10px 0px;
     }
 
-    p {
-        margin-top: auto;
-        margin-bottom: 30px;
-    }
+
 }
 
 .btn-pri {
@@ -121,104 +89,4 @@ p {
     border: none;
     border-radius: 25px;
     background-color: $primaryColor;
-}
-
-.section-quizes {
-    padding-top: 15%;
-    padding-bottom: 10%;
-    padding-right: 20%;
-    padding-left: 20%;
-
-    .tags {
-        word-spacing: 30px;
-    }
-
-    .tag {
-        padding: 8px;
-        border: none;
-        background-color: transparent;
-    }
-
-    .btn-lrg {
-        margin-top: 30px;
-        width: 100%;
-        padding-top: 7%;
-        padding-bottom: 7%;
-    }
-
-    .active {
-        border-radius: 20px;
-        padding: 8px;
-        background-image: linear-gradient(to right, $secondaryColor 0%, $primaryColor 100%);
-        color: white;
-    }
-
-    .or {
-        padding-top: 50px;
-        padding-bottom: 20px;
-    }
-}
-
-.section-typing {
-    padding-top: 8%;
-    padding-bottom: 12.5%;
-    padding-left: 10%;
-
-    h1 {
-        font-family: "Sitka Display";
-        color: $primary200;
-        padding-right: 30%;
-    }
-
-    .btn-lrg {
-        width: 85%;
-        padding-top: 4%;
-        padding-bottom: 4%;
-    }
-
-    p {
-        color: #2E353A;
-        font-size: 25px;
-        padding-right: 30%;
-        padding-top: 3%;
-        padding-bottom: 10%;
-    }
-
-    .right-side {
-        position: relative;
-
-        img {
-            position: absolute;
-            height: 150%;
-            top: -5%;
-            left: -250px
-        }
-    }
-
-}
-
-.separator {
-    height: 10px;
-    width: 100%;
-    background-color: $primary200;
-}
-
-.section-footer {
-    text-align: center;
-    color: $primary200;
-
-    .inner {
-        padding-top: 5%;
-        padding-bottom: 5%;
-    }
-
-    p {
-        font-size: 20px;
-    }
-
-    h6 {
-        font-family: "Sitka Display";
-        font-weight: normal;
-        font-size: 50px;
-    }
 }
