@@ -1,0 +1,104 @@
+//  << COLORS >>  \\
+$primaryColor : #9A24A9;
+$primary100 : pink;
+$primary200 : #2E353A;;
+$primary300 : #650061;
+
+$secondaryColor : #E958A2;
+$secondary100: red;
+$secondary200: #C540A5;
+$secondary300: red;
+
+$backgroundColor:rgb(242, 255, 255);
+$wrapperColor:rgb(242, 255, 255);
+
+
+@mixin color($color) {
+    color: $color;
+}
+
+@mixin borderColor($color, $width) {
+    border-width: $width;
+    border-color: $color;
+}
+
+.c-p {
+    color: $primaryColor;
+}
+
+.c-p1 {
+    color: $primary100;
+}
+
+.c-p2 {
+    color: $primary200;
+}
+
+.c-p3 {
+    color: $primary300;
+}
+
+.c-s {
+    color: $secondaryColor;
+}
+
+.c-s1 {
+    color: $secondary100;
+}
+
+.c-s2 {
+    color: $secondary200;
+}
+
+.c-s3 {
+    color: $secondary300;
+}
+
+.c-w{
+    color: white;
+}
+
+.c-b{
+    color: black;
+}
+
+// BG
+.bg-p {
+    background-color: $primaryColor;
+}
+
+.bg-p1 {
+    background-color: $primary100;
+}
+
+.bg-p2 {
+    background-color: $primary200;
+}
+
+.bg-p3 {
+    background-color: $primary300;
+}
+
+.bg-s {
+    background-color: $secondaryColor;
+}
+
+.bg-s1 {
+    background-color: $secondary100;
+}
+
+.bg-s2 {
+    background-color: $secondary200;
+}
+
+.bg-s3 {
+    background-color: $secondary300;
+}
+
+.bg-w{
+    background-color: white;
+}
+
+.bg-b{
+    background-color: black;
+}
